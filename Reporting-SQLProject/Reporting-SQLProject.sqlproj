@@ -61,6 +61,7 @@
     <Folder Include="Function" />
     <Folder Include="StoredProcedure" />
     <Folder Include="Query" />
+    <Folder Include="PS" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Query\DatabaseCreation.sql" />
@@ -72,5 +73,6 @@
     <Build Include="StoredProcedure\sp_ListAllProductWithCategory.sql" />
     <Build Include="Function\GetProductColor.sql" />
     <Build Include="View\vw_ListProductWitCategory.sql" />
+    <Build Include="PS\ScriptExecution.ps1" />
   </ItemGroup>
 </Project>
