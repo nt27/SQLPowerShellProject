@@ -5,7 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-If Not Exists(Select 'X' From Sysobjects Where name = 'Product')
+If Not Exists(Select 'X' From Sysobjects Where name = 'Product') 
 Begin
 CREATE TABLE [dbo].[Product](
 	[ProductID] [int] IDENTITY(1,1) NOT NULL,
