@@ -1,5 +1,5 @@
 ﻿If Exists(Select 1 from Sysobjects Where name ='sp_ListAllProductWithCategory')
-Drop View dbo.sp_ListAllProductWithCategory
+Drop PROCEDURE dbo.sp_ListAllProductWithCategory
 go
 CREATE PROCEDURE [dbo].sp_ListAllProductWithCategory
 AS

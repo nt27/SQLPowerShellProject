@@ -1,5 +1,5 @@
 ﻿If Exists(Select 1 from Sysobjects Where name ='GetListPrice')
-Drop View dbo.[GetListPrice]
+Drop Function dbo.[GetListPrice]
 go
 CREATE FUNCTION [dbo].[GetListPrice]
 (
