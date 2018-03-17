@@ -57,5 +57,20 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="View" />
+    <Folder Include="Function" />
+    <Folder Include="StoredProcedure" />
+    <Folder Include="Query" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Query\DatabaseCreation.sql" />
+    <None Include="Query\TablesCreation.sql" />
+    <None Include="Query\DataInsert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="StoredProcedure\sp_ListAllProduct.sql" />
+    <Build Include="StoredProcedure\sp_ListAllProductWithCategory.sql" />
+    <Build Include="Function\GetProductColor.sql" />
+    <Build Include="View\vw_ListProductWitCategory.sql" />
   </ItemGroup>
 </Project>
